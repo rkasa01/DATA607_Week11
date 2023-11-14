@@ -1,0 +1,45 @@
+---
+title: "DATA607 - WEEK11"
+author: "Renida Kasa"
+date: "11/13/2023"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+# Week 11 Assignment
+
+## Your task is to analyze an existing recommender system that you find interesting.  
+
+You should:
+1. Perform a Scenario Design analysis as described below.  Consider whether it makes sense for your selected recommender system to perform scenario design twice, once for the organization (e.g. Amazon.com) and once for the organization's customers.
+2. Attempt to reverse engineer what you can about the site, from the site interface and any available information that you can find on the Internet or elsewhere.
+3. Include specific recommendations about how to improve the site's recommendation capabilities going forward. 
+4. Create your report using an R Markdown file, and create a discussion thread with a link to the GitHub repo where your Markdown file notebook resides.  You are not expected to need to write code for this discussion assignment.
+
+## Instagram's Explore Feed
+
+For this assignment, I have selected to analyze the recommender system for Instagram, more specifically because of Instagram's explore feed, which often contains targeted posts from users you do not follow, or ads for items you would be interested in or likely to purchase. I have two separate instagram accounts, each with a different explore feed. On one account, which is fairly new, I follow only my closest friends and family, and on the other one, I follow friends, family, and coworkers. This second account is older, and I also spend more time on it each day, meaning that the explore feed has more knowledge on me and my preferences. I get targeted ads about shopping, traveling, and places to eat in NYC. The newer account has an explore feed which seems a bit more generic -- although I still get targeted ads about shopping, I come across these ads less often, and the rest of the content mainly consists of memes or other users posts, not necessarily regarding my interests. 
+
+
+## 1. Scenario Design Analysis
+
+Instagram is one of Meta's platforms, which collects, uses, and shares user data in a variety of different ways. For example, it tracks user's activity and information, connections, and even browser and device information. It makes sense for Instagram to perform their scenario design twice. Instagram's recommender system consists of two separate neural networks: one which is for the user, and one for the posts. Information is output from each network, and collected to predict engagement. In this case, it can predict the kind of content that a user prefers, and it can predict which users would prefer certain content. 
+
+- Who are Instagram's target users?
+Anyone who uses Instagram is using it to stay in touch or to view what others are posting. This appeals to many individuals because it is an efficient method of communicating. Friends and family from all over the world can remain connected. The explore feed is interesting because it offers content from outside of the circle of individuals which you follow. Everyday, "hundreds of millions of people visit Explore on Instagram to discover something new" (Source: https://engineering.fb.com/2023/08/09/ml-applications/scaling-instagram-explore-recommendations-system/), demonstrating that it has a significant impact on the way in which we conduct our virtual lives. It's easy to learn something new, share content, become inspired, and more. 
+
+- What are their key goals?
+The explore feed was built to help users discover new content, such as photos, videos, and stories relevant to their interests. It functions by retrieving the most relevent posts for a given user, and displaying them on one page.
+
+- How are these goals accomplished?
+Because there are billions of pieces of content on Instagram, their approach with the explore feed would be multistep machine learning processes. Because of this, the recommender system would certainly have to be performed at least twice. Upward of 95 million photos and videos get posted to Instagram on a daily basis, with the average user spending about 53 minutes on this application daily. (Source: https://www.zippia.com/advice/instagram-statistics/#:~:text=At%20least%2095%20million%20photos,minutes%20per%20day%20on%20Instagram.) Instagram is able to customize content, helping it remain relevant by boosting usability. 
+
+## 2. Reverse Engineering
+Instagram's recommender systems use AI which, "based on a highly efficient 3-part ranking funnel that extracts 65 billion features" is able to  "[make] 90 million model predictions every second" (Source:https://instagram-engineering.com/powered-by-ai-instagrams-explore-recommender-system-7ca901d2a882 ). With this kind of information, the explore feed is consistently up to date with user preferences. First, a pool of posts, or data, gets posted daily. In this case, that number is about 95 million pieces of data. Instagram retrieves and ranks relevant content for each user, grouping them in order to create an explore feed. Being that Instagram is a large-scale recommender system, it also uses information collected from users to construct this grouping of posts before it is distributed. Due to  machine learning capabilities, it is constantly being updated and improved, thereby also improving and promoting Instagram's usabilty. 
+
+## 3. Improving Recommendation Capabilities
+I believe that Instagram has the capability to also become a resource for learning. I believe this would also increase usability, because it is offering an additional service to users. Often times, now more than ever, content is censored. We are seeing this happen with political content, even though it is informative. In order for Instagram to also evolve into a news outlet of sorts, it would have to develop an unbiased way to take informative content and organize it according to user preference. Users typically post infographics to provide information to others, but this can also be done in the caption of images. Instagram would have to retrieve the content that is being posted in the captions, and also scan for any content that is included in any images, such as infographics, and then create a sort of information or news board. This can be very challenging considering that Instagram censors specific content, or shadowbans users or specific posts, decreasing visibility and engagement. There would have to be a way to work around that as well. We need to consider what Instagram's agenda is in this case, and think about how this can be achieved in an unbiased manner. 
+
+
+
